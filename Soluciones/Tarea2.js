@@ -10,7 +10,7 @@
 for (var i = 0; i <= 2; i++)
 {
   // Se pide el mes al usuario
-	var month = prompt(`Persona {i + 1} Ingresa un mes, puede ser número o texto`);
+  var month = prompt(`Persona {i + 1} Ingresa un mes, puede ser número o texto`);
   
   // Se utiliza el switch para hacer mas entendible el código
   // asi como abarcar diferentes casos sin necesidad de procesamiento.
