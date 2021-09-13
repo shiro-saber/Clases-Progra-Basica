@@ -1,3 +1,9 @@
+/*
+ * Hacer un programa, que pida al usuario elegir entre dos funcionalidades, las cuales serán:
+ *     Ordenar en orden alfabético una palabra dada por el usuario.
+ *     Regresar una palabra en mayúsculas.
+ */
+
 let userAnswer = prompt("Elige 1 para ordenar alfabeticamente, elige 2 para convertir a mayúsculas");
 
 // Decides which function it's going to be called
@@ -23,7 +29,7 @@ switch (userAnswer)
  */
 function orderAlphabetically()
 {
-	/*
+  /*
    * Separamos el string en caracteres para poder hacer el ciclo con la funcion .split('').
    * Creamos una variable temporal que nos va a ayudar a tener el valor de la letra mas cercana al comienzo del abecedario.
    * Recorremos dos veces los caracteres, la primera, es la letra que estamos comparando y la segunda es para comparar con las siguientes letras.
@@ -38,7 +44,7 @@ function orderAlphabetically()
   
   for(let i = 0; i < characters.length; i++) {
     for(let j = i + 1; j < characters.length; j++) {
-    	// Checks if the character is later 
+      // Checks if the character is later 
       if(characters[i] > characters[j])
       {
         tmp = characters[i];
